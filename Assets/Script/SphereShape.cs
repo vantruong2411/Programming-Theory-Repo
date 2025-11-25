@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SphereShape : ShapeBase
 {
+    // POLYMORPHISM
     public override float TimeLife { get; set; } = 3f;
 
     protected override void DestroyShape()

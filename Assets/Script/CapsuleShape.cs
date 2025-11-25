@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CapsuleShape : ShapeBase
 {
+    // POLYMORPHISM
     public override float TimeLife { get; set; } = 4f;
 
     protected override void DestroyShape()

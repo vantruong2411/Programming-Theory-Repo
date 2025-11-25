@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//INHERITANCE
 public abstract class ShapeBase : MonoBehaviour
 {
     [SerializeField]
     private float timeLife = 1f;
 
-    // Encapsulation: đảm bảo giá trị an toàn
+    //ENCAPSULATION
     public virtual float TimeLife
     {
         get => timeLife;
@@ -26,6 +27,6 @@ public abstract class ShapeBase : MonoBehaviour
         }
     }
 
-    // Abstraction: lớp con bắt buộc phải có hành động destroy
+    //ABSTRACTION
     protected abstract void DestroyShape();
 }
